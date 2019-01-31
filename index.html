@@ -16,6 +16,7 @@
         var els = document.getElementsByClassName("pix");
         function handleClick(e) {
             console.log(this);
+            document.deleteElement(this)
         }
         for (let i = 0; i < els.length; i++) {
             els[i].addEventListener("click", handleClick, false)
