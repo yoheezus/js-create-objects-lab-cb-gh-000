@@ -17,7 +17,7 @@
         function handleClick(e) {
             console.log(this);
             var parent = document.getElementsByTagName("main")[0]
-            parent.removeChild(child)
+            parent.removeChild(this)
         }
         for (let i = 0; i < els.length; i++) {
             els[i].addEventListener("click", handleClick, false)
