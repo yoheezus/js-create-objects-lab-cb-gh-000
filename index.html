@@ -16,8 +16,8 @@
         var els = document.getElementsByClassName("pix");
         function handleClick(e) {
             console.log(this);
-            var child = this
-            document.getElementsByTagName("main").removeChild(child)
+            var parent = document.getElementsByTagName("main")
+            parent.removeChild(child)
         }
         for (let i = 0; i < els.length; i++) {
             els[i].addEventListener("click", handleClick, false)
